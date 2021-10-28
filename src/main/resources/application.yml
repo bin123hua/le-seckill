@@ -14,14 +14,24 @@ spring:
       auto-commit: true
       max-lifetime: 1800000
       connection-timeout: 30000
-      #????????sql???????
       connection-test-query: SELECT 1
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    timeout: 10000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: 10000ms
+        max-idle: 200
+        min-idle: 5
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
   type-aliases-package: com.le.leseckill.pojo
 
-#??sql???????mapper?????xml??
+
 logging:
   level:
     com.le.leseckill.mapper: debug

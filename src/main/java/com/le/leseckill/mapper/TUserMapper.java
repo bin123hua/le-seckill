@@ -1,7 +1,7 @@
 package com.le.leseckill.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.le.leseckill.pojo.TUser;
+import com.le.leseckill.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -13,6 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @since 2021-10-23
  */
 @Mapper
-public interface TUserMapper extends BaseMapper<TUser> {
+public interface TUserMapper extends BaseMapper<User> {
 
 }

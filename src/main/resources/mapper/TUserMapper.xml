@@ -3,7 +3,7 @@
 <mapper namespace="com.le.leseckill.mapper.TUserMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.le.leseckill.pojo.TUser">
+    <resultMap id="BaseResultMap" type="com.le.leseckill.pojo.User">
         <result column="id" property="id" />
         <result column="nickname" property="nickname" />
         <result column="password" property="password" />
